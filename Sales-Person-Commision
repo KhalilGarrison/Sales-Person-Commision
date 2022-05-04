@@ -1,0 +1,23 @@
+#Declare the variables and use the input() function to accept an integer input from the user.
+saleamount = int(input("Enter Sale Amount "''))
+rate = int(input("Enter Rate " ''))
+class1  = int(input("Enter Sales Person Class Number Between 1,2 and 3 " ''))
+#If, else and elif statements for class 1 to 3
+if class1 == 1:
+    if sales <= 1000:
+        print(0.06 * sales)
+#The elif and statements are used if the IF stamtent is false
+    elif 1000 < sales <= 2000:
+        print(0.07 * sales)
+    else:
+        print(0.1 * sales)
+elif class1 == 2:
+    if sales <= 1000:
+        print(0.04 * sales)
+    else:
+        print(0.06 * sales)
+elif class1 == 3:
+    print(0.045 * sales)
+#This else function will print Enter salesperson class between 1,2 and 3 if a number between 1,2 and 3 is entered in the input field. 
+else:
+    print('Enter salesperson class between 1,2 and 3')
